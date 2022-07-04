@@ -22,12 +22,14 @@ class VisitorItem extends StatelessWidget {
                   width: double.infinity,
                   fit: BoxFit.fill,
                 ),
-
-
               ),
-              SizedBox(width: 10,),
+              SizedBox(
+                width: 10,
+              ),
               Text('Ahmed'),
-              SizedBox(width: 160,),
+              SizedBox(
+                width: 160,
+              ),
               Container(
                 height: 30,
                 width: 30,
@@ -37,10 +39,10 @@ class VisitorItem extends StatelessWidget {
                   width: double.infinity,
                   fit: BoxFit.fill,
                 ),
-
-
               ),
-              SizedBox(width: 10,),
+              SizedBox(
+                width: 10,
+              ),
               Container(
                 height: 30,
                 width: 30,
@@ -50,19 +52,20 @@ class VisitorItem extends StatelessWidget {
                   width: double.infinity,
                   fit: BoxFit.fill,
                 ),
-
-
               ),
-
             ],
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Container(
             height: 1,
             width: double.infinity,
             color: Colors.black12,
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
               Container(
@@ -74,18 +77,26 @@ class VisitorItem extends StatelessWidget {
                   width: double.infinity,
                   fit: BoxFit.fill,
                 ),
-
-
               ),
-              SizedBox(width: 10,),
+              SizedBox(
+                width: 10,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Date',textAlign: TextAlign.start,),
-                  Text('15 Aug ,01:32:55',style: TextStyle(color: Colors.redAccent),)
+                  Text(
+                    'Date',
+                    textAlign: TextAlign.start,
+                  ),
+                  Text(
+                    '15 Aug ,01:32:55',
+                    style: TextStyle(color: Colors.redAccent),
+                  )
                 ],
               ),
-              SizedBox(width: 20,),
+              SizedBox(
+                width: 20,
+              ),
               Container(
                 height: 30,
                 width: 30,
@@ -95,21 +106,23 @@ class VisitorItem extends StatelessWidget {
                   width: double.infinity,
                   fit: BoxFit.fill,
                 ),
-
-
               ),
-              SizedBox(width: 10,),
+              SizedBox(
+                width: 10,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('IP'),
-    Text('15 Aug ,01:32:55',style: TextStyle(color: Colors.redAccent)),
+                  Text('15 Aug ,01:32:55',
+                      style: TextStyle(color: Colors.redAccent)),
                 ],
               ),
-
             ],
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
               Container(
@@ -121,18 +134,26 @@ class VisitorItem extends StatelessWidget {
                   width: double.infinity,
                   fit: BoxFit.fill,
                 ),
-
-
               ),
-              SizedBox(width: 10,),
+              SizedBox(
+                width: 10,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Redirected',textAlign: TextAlign.start,),
-                  Text('15 Aug ,01:32:55',style: TextStyle(color: Colors.redAccent),)
+                  Text(
+                    'Redirected',
+                    textAlign: TextAlign.start,
+                  ),
+                  Text(
+                    '15 Aug ,01:32:55',
+                    style: TextStyle(color: Colors.redAccent),
+                  )
                 ],
               ),
-              SizedBox(width: 20,),
+              SizedBox(
+                width: 20,
+              ),
               Container(
                 height: 30,
                 width: 30,
@@ -142,21 +163,20 @@ class VisitorItem extends StatelessWidget {
                   width: double.infinity,
                   fit: BoxFit.fill,
                 ),
-
-
               ),
-              SizedBox(width: 10,),
+              SizedBox(
+                width: 10,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Homepage'),
-                  Text('15 Aug ,01:32:55',style: TextStyle(color: Colors.redAccent)),
+                  Text('15 Aug ,01:32:55',
+                      style: TextStyle(color: Colors.redAccent)),
                 ],
               ),
-
             ],
           ),
-
         ],
       ),
     );
