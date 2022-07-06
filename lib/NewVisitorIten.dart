@@ -1,8 +1,9 @@
-import 'package:assesment/MyThemeData.dart';
 import 'package:flutter/material.dart';
 
-class VisitorItem extends StatelessWidget {
-  const VisitorItem({Key? key}) : super(key: key);
+import 'MyThemeData.dart';
+
+class NewVisitorItem extends StatelessWidget {
+  const NewVisitorItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,24 +43,17 @@ class VisitorItem extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width * 0.16,
+                width: MediaQuery.of(context).size.width * 0.44,
               ),
-              Text(
-                'Last Visit',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12,
-                    color: Colors.black),
-              ),
-              SizedBox(
-                width: 3,
-              ),
-              Text(
-                '15 Aug ,01:32:55',
-                style: TextStyle(
-                    fontSize: 10,
-                    color: Colors.redAccent,
-                    fontWeight: FontWeight.bold),
+              Container(
+                height: 30,
+                width: 30,
+                child: Image.asset(
+                  'assets/images/new.png',
+                  height: double.infinity,
+                  width: double.infinity,
+                  fit: BoxFit.fill,
+                ),
               ),
               SizedBox(
                 width: 10,
