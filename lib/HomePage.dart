@@ -1,3 +1,4 @@
+import 'package:assesment/MyThemeData.dart';
 import 'package:assesment/SettingsTab.dart';
 import 'package:assesment/TimerTab.dart';
 import 'package:assesment/VisitorListTab.dart';
@@ -23,7 +24,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
           backgroundColor: Colors.black12,
           bottomNavigationBar: CurvedNavigationBar(
-            backgroundColor: Colors.redAccent,
+            backgroundColor: MythemeData.redcolor,
             items: <Widget>[
               Icon(Icons.home_outlined, size: 25),
               Icon(Icons.access_time_rounded, size: 25),

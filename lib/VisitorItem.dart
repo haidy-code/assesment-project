@@ -1,3 +1,4 @@
+import 'package:assesment/MyThemeData.dart';
 import 'package:flutter/material.dart';
 
 class VisitorItem extends StatelessWidget {
@@ -6,8 +7,11 @@ class VisitorItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: Colors.white,
+      ),
       padding: EdgeInsets.all(12),
-      color: Colors.white,
       height: 150,
       child: Column(
         children: [
@@ -24,21 +28,26 @@ class VisitorItem extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: 5,
               ),
-              Text('Ahmed'),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Ahmed',style: MythemeData.lighttheme.textTheme.headline3),
+                  Text('Cairo,Egypt',style: MythemeData.lighttheme.textTheme.headline4,)
+                ],
+              ),
               SizedBox(
-                width: 160,
+                width: MediaQuery.of(context).size.width*0.17,
               ),
-              Container(
-                height: 30,
-                width: 30,
-                child: Image.asset(
-                  'assets/images/new.png',
-                  height: double.infinity,
-                  width: double.infinity,
-                  fit: BoxFit.fill,
+              Text(
+                'Last Visit',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,fontSize: 12,color: Colors.black
                 ),
+              ),Text(
+                '15 Aug ,01:32:55',
+                style: MythemeData.lighttheme.textTheme.headline1,
               ),
               SizedBox(
                 width: 10,
@@ -69,8 +78,8 @@ class VisitorItem extends StatelessWidget {
           Row(
             children: [
               Container(
-                height: 30,
-                width: 30,
+                height: 25,
+                width: 25,
                 child: Image.asset(
                   'assets/images/date.png',
                   height: double.infinity,
@@ -79,7 +88,7 @@ class VisitorItem extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,19 +96,20 @@ class VisitorItem extends StatelessWidget {
                   Text(
                     'Date',
                     textAlign: TextAlign.start,
+                      style: MythemeData.lighttheme.textTheme.headline3
                   ),
                   Text(
                     '15 Aug ,01:32:55',
-                    style: TextStyle(color: Colors.redAccent),
+                    style: MythemeData.lighttheme.textTheme.headline1,
                   )
                 ],
               ),
               SizedBox(
-                width: 20,
+                width: MediaQuery.of(context).size.width*0.28,
               ),
               Container(
-                height: 30,
-                width: 30,
+                height: 25,
+                width: 25,
                 child: Image.asset(
                   'assets/images/ip.png',
                   height: double.infinity,
@@ -108,14 +118,14 @@ class VisitorItem extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('IP'),
-                  Text('15 Aug ,01:32:55',
-                      style: TextStyle(color: Colors.redAccent)),
+                  Text('IP',style: MythemeData.lighttheme.textTheme.headline3,),
+                  Text('192.255.168.15',
+                      style: MythemeData.lighttheme.textTheme.headline1),
                 ],
               ),
             ],
@@ -126,8 +136,8 @@ class VisitorItem extends StatelessWidget {
           Row(
             children: [
               Container(
-                height: 30,
-                width: 30,
+                height: 25,
+                width: 25,
                 child: Image.asset(
                   'assets/images/redirected.png',
                   height: double.infinity,
@@ -136,7 +146,7 @@ class VisitorItem extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,19 +154,20 @@ class VisitorItem extends StatelessWidget {
                   Text(
                     'Redirected',
                     textAlign: TextAlign.start,
+                    style: MythemeData.lighttheme.textTheme.headline3,
                   ),
                   Text(
-                    '15 Aug ,01:32:55',
-                    style: TextStyle(color: Colors.redAccent),
+                    'www.google.com',
+                    style: MythemeData.lighttheme.textTheme.headline1,
                   )
                 ],
               ),
               SizedBox(
-                width: 20,
+                width: MediaQuery.of(context).size.width*0.28,
               ),
               Container(
-                height: 30,
-                width: 30,
+                height: 25,
+                width: 25,
                 child: Image.asset(
                   'assets/images/homepage.png',
                   height: double.infinity,
@@ -165,14 +176,14 @@ class VisitorItem extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Homepage'),
-                  Text('15 Aug ,01:32:55',
-                      style: TextStyle(color: Colors.redAccent)),
+                  Text('Homepage',style: MythemeData.lighttheme.textTheme.headline3,),
+                  Text('www.souq.com',
+                      style: MythemeData.lighttheme.textTheme.headline1),
                 ],
               ),
             ],
