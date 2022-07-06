@@ -116,7 +116,7 @@ class _VisitorListTabState extends State<VisitorListTab> {
                 width: 35,
 
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(4),bottomRight:Radius.circular(4) ),
                   color: MythemeData.redcolor,
                 ),
                 margin: EdgeInsets.only(
@@ -289,7 +289,7 @@ class _VisitorListTabState extends State<VisitorListTab> {
                 width: 35,
 
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(4),bottomRight:Radius.circular(4) ),
                   color: MythemeData.redcolor,
                 ),
                 margin: EdgeInsets.only(
@@ -393,7 +393,9 @@ class _VisitorListTabState extends State<VisitorListTab> {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,fontSize: 12,color: Colors.black
                               ),
-                            ),Text(
+
+                            ),
+                            SizedBox(width: 3,),Text(
                               '15 Aug ,01:32:55',
                               style: MythemeData.lighttheme.textTheme.headline1,
                             ),

@@ -38,16 +38,22 @@ class VisitorItem extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width*0.17,
+                width: MediaQuery.of(context).size.width*0.16,
               ),
               Text(
                 'Last Visit',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,fontSize: 12,color: Colors.black
                 ),
-              ),Text(
+
+              ),
+              SizedBox(width: 3,),Text(
                 '15 Aug ,01:32:55',
-                style: MythemeData.lighttheme.textTheme.headline1,
+                style: TextStyle(
+                    fontSize: 10,
+                    color: Colors.redAccent,
+                    fontWeight: FontWeight.bold
+                ),
               ),
               SizedBox(
                 width: 10,
